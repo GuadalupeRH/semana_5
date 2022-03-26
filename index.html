@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/ef3815418b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+        <img src="./img/Ball.png" width="50" height="50" class="imagen-logo">
+        <img src="img/logo_pokemon.svg"  width="170" height="80" class="imagen-logo">
+        <img src="./img/Ball.png" width="50" height="50" class="imagen-logo">
+    </div>
+    <div class="poke cols">
+        <div class="izquierda">
+            <div class="interior">
+                <div class="margen">
+                    <h1>Pokédex</h1>
+                    <h2>¡Bienvenido!</h2>
+                    <form action="" onsubmit="searchPokemon(event)">
+                        <input type="text" name="pokemon" autocomplete="off" placeholder="Ingresa información" class="input-form">
+                    </form>
+                    <p>Busca un Pokémon por su nombre o usando su número de la Pokédex Nacional.</p>
+                    <p><img src="./img/decoracion.png" width="160" height="158" class="decoracion"></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="derecha">
+            <div data-poke-card class="poke-card">
+                <div data-poke-name>Resultado de la búsqueda:</div>
+                <div data-poke-img-contenedor class="img-contenedor">
+                    <img data-poke-img class="poke-imagen" src="img/poke-shadow.png">
+                </div>
+                <div data-poke-id></div>
+                <div data-poke-types class="poke-types"></div>
+                <div data-poke-stats class="poke-stats"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
